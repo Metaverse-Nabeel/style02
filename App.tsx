@@ -1,8 +1,15 @@
 import React from 'react';
-import {Text} from 'react-native';
+import {SafeAreaView, ScrollView} from 'react-native';
+import FlatCards from './components/FlatCards';
 
 function App() {
-  return <Text>New React-Native App for styling.</Text>;
+  return (
+    <SafeAreaView>
+      <ScrollView>
+        <FlatCards />
+      </ScrollView>
+    </SafeAreaView>
+  );
 }
 
 export default App;
